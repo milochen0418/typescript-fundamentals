@@ -17,7 +17,14 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "tsc src/index.ts --outDir lib --types node --module commonjs --target ES2017",
+    "build-es6": "tsc src/index.ts --outDir lib --types node --module commonjs --target ES6",
+    "build-es2015": "tsc src/index.ts --outDir lib --types node --module commonjs --target ES2015",
+    "build-es5": "tsc src/index.ts --outDir lib --types node --module commonjs --target ES5",
+    "build-es3": "tsc src/index.ts --outDir lib --types node --module commonjs --target ES3",
     "test": "echo 'No tests'"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "typescript": "^3.7.5"
+  }
 }
